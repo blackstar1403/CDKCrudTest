@@ -51,3 +51,13 @@ Follow the next steps to deploy the project:
     - Use the next command to destroy the whole infrastructure:
     ```bash
     cdk destroy --all --profile <AWS CLI PROFILE>
+
+## Endpoints Included in the Collection
+
+The Postman collection contains the following API endpoints:
+
+1. **POST https://3lef9wjc06.execute-api.us-east-1.amazonaws.com/prod/tasks**: Create a new task.
+2. **GET https://3lef9wjc06.execute-api.us-east-1.amazonaws.com/prod/tasks**: Retrieve all tasks.
+3. **GET https://3lef9wjc06.execute-api.us-east-1.amazonaws.com/prod/tasks/{task_id}**: Retrieve a specific task by its `task_id`.
+4. **PUT https://3lef9wjc06.execute-api.us-east-1.amazonaws.com/prod/tasks/{task_id}**: Update an existing task.
+5. **DELETE https://3lef9wjc06.execute-api.us-east-1.amazonaws.com/prod/tasks/{task_id}**: Delete a specific task by its `task_id`.
